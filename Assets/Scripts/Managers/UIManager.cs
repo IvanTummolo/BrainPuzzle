@@ -1,9 +1,9 @@
-﻿namespace redd096
+﻿namespace BrainPuzzle
 {
     using UnityEngine;
     using UnityEngine.UI;
 
-    [AddComponentMenu("redd096/MonoBehaviours/UI Manager")]
+    [AddComponentMenu("BrainPuzzle/MonoBehaviours/UI Manager")]
     public class UIManager : MonoBehaviour
     {
         [Header("Menu")]

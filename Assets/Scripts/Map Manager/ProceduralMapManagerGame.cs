@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using redd096;
+using BrainPuzzle;
 
-[AddComponentMenu("Project Brain/Procedural Map/Map Manager")]
+[AddComponentMenu("BrainPuzzle/Procedural Map/Map Manager")]
 public class ProceduralMapManagerGame : ProceduralMapManager
 {
     [Header("Player")]

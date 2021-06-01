@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using redd096;
+using BrainPuzzle;
 
-[AddComponentMenu("Project Brain/Procedural Map/Room")]
+[AddComponentMenu("BrainPuzzle/Procedural Map/Room")]
 public class RoomGame : Room
 {
     [Header("Camera Position")]

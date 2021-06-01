@@ -1,4 +1,4 @@
-﻿namespace redd096
+﻿namespace BrainPuzzle
 {
     using UnityEngine;
     using System.Collections;
@@ -10,7 +10,7 @@
         [Range(0f, 1f)] public float volume;
     }
 
-    [AddComponentMenu("redd096/Singletons/Sound Manager")]
+    [AddComponentMenu("BrainPuzzle/Singletons/Sound Manager")]
     public class SoundManager : Singleton<SoundManager>
     {
         #region variables

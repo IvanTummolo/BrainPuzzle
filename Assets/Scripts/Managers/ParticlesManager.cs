@@ -1,9 +1,9 @@
-﻿namespace redd096
+﻿namespace BrainPuzzle
 {
     using System.Collections.Generic;
     using UnityEngine;
 
-    [AddComponentMenu("redd096/Singletons/Particles Manager")]
+    [AddComponentMenu("BrainPuzzle/Singletons/Particles Manager")]
     public class ParticlesManager : Singleton<ParticlesManager>
     {
         private Transform particlesParent;

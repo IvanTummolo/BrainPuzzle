@@ -1,8 +1,8 @@
-﻿namespace redd096
+﻿namespace BrainPuzzle
 {
     using UnityEngine;
 
-    [AddComponentMenu("redd096/Singletons/Game Manager")]
+    [AddComponentMenu("BrainPuzzle/Singletons/Game Manager")]
     [DefaultExecutionOrder(-100)]
     public class GameManager : Singleton<GameManager>
     {

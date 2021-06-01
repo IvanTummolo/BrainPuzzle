@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using redd096;
+using BrainPuzzle;
 
 [RequireComponent(typeof(Activable))]
 public class ActivableFeedback : MonoBehaviour

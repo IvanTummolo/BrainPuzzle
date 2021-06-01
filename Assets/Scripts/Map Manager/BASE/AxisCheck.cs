@@ -1,4 +1,4 @@
-﻿namespace redd096
+﻿namespace BrainPuzzle
 {
     using UnityEngine;
 
@@ -12,7 +12,7 @@
         greater, greaterEqual, lower, lowerEqual, equal, notEqual
     }
 
-    [CreateAssetMenu(menuName = "redd096/Procedural Map Manager Check/Axis Check")]
+    [CreateAssetMenu(menuName = "BrainPuzzle/Procedural Map Manager Check/Axis Check")]
     public class AxisCheck : ProceduralMapManagerCheck
     {
         [SerializeField] Axis axis = Axis.X;
