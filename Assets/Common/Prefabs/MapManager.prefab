@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5395595350726697733
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5395595350726697735}
+  - component: {fileID: 5395595350726697734}
+  m_Layer: 0
+  m_Name: MapManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5395595350726697735
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5395595350726697733}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5395595350726697734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5395595350726697733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14069bfefe065c24fa18a0780aa17396, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regenOnPlay: 1
+  numberRooms: 12
+  checks: []
+  maxAttempts: 5
+  roomsPerAttempt: 5
+  doorsPerAttempt: 2
+  fillerRooms:
+  - nameList: Puzzle Generici
+    percentage: 100
+    roomPrefabs:
+    - {fileID: 581691400476901887, guid: 910e959b62aefa746b2da145a4d46eef, type: 3}
+    - {fileID: 7082103633808166715, guid: f2c7b39e02991e9449ce4b1702db239b, type: 3}
+    - {fileID: 8651818830024690695, guid: 7a22af1b8d52e2249a8ce2de441ea707, type: 3}
+  fixedRooms:
+  - minID: 0
+    maxID: 0
+    roomPrefabs:
+    - {fileID: 7082103633808166715, guid: f2c7b39e02991e9449ce4b1702db239b, type: 3}
+  - minID: 0
+    maxID: 0
+    roomPrefabs:
+    - {fileID: 535466702588894840, guid: c417d9844645f544e9c656c1a11b6807, type: 3}
+  - minID: 0
+    maxID: 0
+    roomPrefabs:
+    - {fileID: 6595384632044376230, guid: 70e2533778efb8f46baed3ada8ab78d6, type: 3}
+  playerPrefab: {fileID: 2191401332918638931, guid: 9a86a4c39db540d4ba67d0626f987ce1,
+    type: 3}

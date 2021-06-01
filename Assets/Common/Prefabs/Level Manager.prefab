@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1809616337077999021
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2480933678351231419}
+  - component: {fileID: 4675331397172826862}
+  m_Layer: 0
+  m_Name: Level Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2480933678351231419
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809616337077999021}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4675331397172826862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1809616337077999021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da61a832d97c1c24fbef54b7e23e93a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RopePrefab: {fileID: 5571142256544732861, guid: 55790f0279c591f40abba4ea01804310,
+    type: 3}
+  ColliderPrefab: {fileID: 7427906282215950925, guid: 478f66392c2882f4a977dfdeb9924ea2,
+    type: 3}
+  RopeLength: 5
+  minimapIconPrefab: {fileID: 1197570150614561193, guid: 31f27cc604f7a674fb4347da1728cd92,
+    type: 3}
+  spriteRoom: {fileID: 21300000, guid: 7895b49ac67362a46b71733e427ec2a1, type: 3}
+  spriteCurrentRoom: {fileID: 21300000, guid: e517902464a97314bb41bfc8c5b0c12f, type: 3}
+  playerIconPrefab: {fileID: 1197570150614561193, guid: 490e5673e3fa5db498bab79e6724a3a1,
+    type: 3}
+  currentRoom: {fileID: 0}
