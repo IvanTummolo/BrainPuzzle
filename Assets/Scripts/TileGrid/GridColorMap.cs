@@ -5,6 +5,7 @@
 #if UNITY_EDITOR
 
     using UnityEditor;
+    using System.IO;
 
     [CustomEditor(typeof(GridColorMap))]
     public class GridBaseEditor : Editor
@@ -23,7 +24,7 @@
 
                 if (Handles.Button(current_tile.transform.position, Quaternion.identity, t.TileSize.x, t.TileSize.y, Handles.CubeHandleCap))
                 {
-                    TileBase prefab = t.GetTilePrefab(current_tile.PositionInGrid.x, current_tile.PositionInGrid.y);
+
                     this.Repaint();
                 }
             }
@@ -67,6 +68,55 @@
                 Undo.RegisterFullObjectHierarchyUndo(target, "Destroy Grid");
             }
 
+
+            if (GUILayout.Button("Generate ColorMap"))
+            {
+
+                int MaxX = 0;
+                int MaxY = 0;
+
+                        foreach (TileColorMap current_tile in obj.GetComponentsInChildren<TileColorMap>())
+                        {
+                            if (current_tile.PositionInGrid.x > MaxX)
+                                MaxX = current_tile.PositionInGrid.x;
+
+                            if (current_tile.PositionInGrid.y > MaxY)
+                                MaxY = current_tile.PositionInGrid.y;
+
+                        }
+
+                MaxX++;
+                MaxY++;
+
+                Texture2D texture = new Texture2D(MaxX, MaxY,TextureFormat.RGB24,false,true);
+                texture.filterMode = FilterMode.Point;
+                
+                texture.wrapMode = TextureWrapMode.Clamp;
+                texture.Apply();
+
+                for (int x = 0; x < MaxX; x++)
+                {
+                    for (int y = 0; y < MaxY; y++)
+                    {
+                        Vector2Int pos = new Vector2Int(x, y);
+                        TileColorMap tile = obj.GetTile(pos);
+                        Color color = tile.tileColor;
+                        texture.SetPixel(x,y,color);
+                    }
+                }
+
+                texture.Apply();
+
+                byte[] bytes;
+                bytes = texture.EncodeToPNG();
+
+                System.IO.FileStream fileSave;
+                fileSave = new FileStream(Application.dataPath + "/Common/ColorMaps/Colormap.png", FileMode.Create);
+                System.IO.BinaryWriter binary;
+                binary = new BinaryWriter(fileSave);
+                binary.Write(bytes);
+                fileSave.Close();
+            }
 
             if (GUILayout.Button("Update Grid Rotation"))
             {
