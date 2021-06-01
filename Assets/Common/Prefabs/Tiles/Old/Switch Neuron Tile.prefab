@@ -1,6 +1,48 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &3292221272276544528
+--- !u!114 &-2534835599837595816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8652604544695524632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71331eaf90456b94b8ead85181d33c52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlesOnPick: {fileID: 0}
+  soundOnPick:
+    audioClip: {fileID: 0}
+    volume: 0
+  particlesOnAttach: {fileID: 0}
+  soundOnAttach:
+    audioClip: {fileID: 0}
+    volume: 0
+  particlesOnDetach: {fileID: 0}
+  soundOnDetach:
+    audioClip: {fileID: 0}
+    volume: 0
+  particlesOnRewind: {fileID: 0}
+  soundOnRewind:
+    audioClip: {fileID: 0}
+    volume: 0
+--- !u!114 &7306333128120910926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8652604544695524632}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a1d3a6527b9f1f4ea45861d42e3c0de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectToControl: {fileID: 5950126778038011443}
+  ObjectsToActivate: []
+--- !u!1001 &7561902243374603520
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -67,20 +109,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6575851107750232829, guid: 9f01bdc524f143747842a5d7a0673564,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8437252861406868514, guid: 9f01bdc524f143747842a5d7a0673564,
+        type: 3}
+      propertyPath: tileColor.b
+      value: 0.3254902
+      objectReference: {fileID: 0}
+    - target: {fileID: 8437252861406868514, guid: 9f01bdc524f143747842a5d7a0673564,
+        type: 3}
+      propertyPath: tileColor.g
+      value: 0.65882355
+      objectReference: {fileID: 0}
+    - target: {fileID: 8437252861406868514, guid: 9f01bdc524f143747842a5d7a0673564,
+        type: 3}
+      propertyPath: tileColor.r
+      value: 0.20392159
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f01bdc524f143747842a5d7a0673564, type: 3}
---- !u!4 &8817492802297343351 stripped
+--- !u!1 &8652604544695524632 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1217519994549780504, guid: 9f01bdc524f143747842a5d7a0673564,
+    type: 3}
+  m_PrefabInstance: {fileID: 7561902243374603520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4548373080361835623 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6336097595642347879, guid: 9f01bdc524f143747842a5d7a0673564,
     type: 3}
-  m_PrefabInstance: {fileID: 3292221272276544528}
+  m_PrefabInstance: {fileID: 7561902243374603520}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &5345221621483231395
+--- !u!1001 &8155409899214175930
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 8817492802297343351}
+    m_TransformParent: {fileID: 4548373080361835623}
     m_Modifications:
     - target: {fileID: 2575723496577677447, guid: f9eb3f743a91e574383b606fc5e6ba72,
         type: 3}
@@ -110,17 +178,17 @@ PrefabInstance:
     - target: {fileID: 2575723496577677447, guid: f9eb3f743a91e574383b606fc5e6ba72,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2575723496577677447, guid: f9eb3f743a91e574383b606fc5e6ba72,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2575723496577677447, guid: f9eb3f743a91e574383b606fc5e6ba72,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2575723496577677447, guid: f9eb3f743a91e574383b606fc5e6ba72,
         type: 3}
@@ -142,5 +210,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Switch Neuron
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 440723256308018884, guid: f9eb3f743a91e574383b606fc5e6ba72, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: f9eb3f743a91e574383b606fc5e6ba72, type: 3}
+--- !u!1 &5950126778038011443 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2575723496577677449, guid: f9eb3f743a91e574383b606fc5e6ba72,
+    type: 3}
+  m_PrefabInstance: {fileID: 8155409899214175930}
+  m_PrefabAsset: {fileID: 0}

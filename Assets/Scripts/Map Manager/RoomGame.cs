@@ -51,6 +51,9 @@ public class RoomGame : Room
 
     bool SameDoors(List<DoorStruct> alternativeDoors)
     {
+        if (alternativeDoors == null)
+            return false;
+
         //do only if same number of doors
         if (alternativeDoors.Count != usedDoors.Count)
             return false;

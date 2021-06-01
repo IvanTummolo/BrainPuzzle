@@ -25,12 +25,19 @@
 
             GUILayout.Space(10);
 
+
             if (GUILayout.Button("Destroy Map"))
             {
                 mapManager.DestroyMap();
 
                 //set undo
                 Undo.RegisterFullObjectHierarchyUndo(target, "Regen World");
+            }
+
+            //add room check
+            if (mapManager.numberRooms < mapManager.rooms.Count)
+            {
+                EditorGUILayout.HelpBox("Number Rooms must be equals to rooms prefab count", MessageType.Error);
             }
         }
     }
@@ -55,17 +62,24 @@
     public class StructFillerRooms
     {
         public string nameList;
+
         [Range(0, 100)] public int percentage = 100;
         public Room[] roomPrefabs;
     }
 
-    [AddComponentMenu("redd096/Procedural Map/Procedural Map Manager")]
+    [AddComponentMenu("BrainPuzzle/Procedural Map/Procedural Map Manager")]
     public abstract class ProceduralMapManager : MonoBehaviour
     {
         [Header("Setup")]
-        [SerializeField] bool regenOnPlay = true;
-        [Min(1)] [SerializeField] int numberRooms = 12;
-        [SerializeField] protected ProceduralMapManagerCheck[] checks = default;
+        [SerializeField]
+        bool regenOnPlay = true;
+
+        [Min(1)]
+        [SerializeField]
+        public int numberRooms = 12;
+
+        [SerializeField]
+        protected ProceduralMapManagerCheck[] checks = default;
 
         [Header("Attempts")]
         [Min(1)] [SerializeField] int maxAttempts = 5;
@@ -79,7 +93,8 @@
         [SerializeField] protected StructFixedRooms[] fixedRooms = default;
 
         //rooms
-        List<Room> rooms = new List<Room>();
+        public List<Room> rooms = new List<Room>();
+
         private int roomID;
         private Room lastRoom;
         private bool succeded;
@@ -175,7 +190,7 @@
             if (rooms.Count < numberRooms)
             {
                 //destroy old and create new one
-                Debug.Log("<color=red>Shitty map, cry and restart</color>");
+                Debug.Log("<color=red>numberRooms must be greater than rooms count</color>");
                 DestroyMap();
                 yield return CreateMap(roomsEveryOtherMapManager);
             }
@@ -248,9 +263,16 @@
             int random = Mathf.Max(1, Mathf.RoundToInt(Random.value * 100));
             int currentPercentage = 0;
 
+
             //foreach filler, check if percentage is inside random value
             foreach (StructFillerRooms filler in fillerRooms)
             {
+                if (filler.roomPrefabs.Length == 0)
+                {
+                    Debug.LogWarning("ProceduralMapManager.GetRoomPrefab(): roomPrefabs is empty ");
+                    continue;
+                }
+
                 //if inside, return its prefab
                 if (filler.percentage + currentPercentage >= random)
                     return filler.roomPrefabs[Random.Range(0, filler.roomPrefabs.Length)];

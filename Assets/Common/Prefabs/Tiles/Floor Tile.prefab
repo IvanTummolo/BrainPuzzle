@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 410344231473108935}
   - component: {fileID: 1925936304082117805}
   - component: {fileID: 6575851107750232829}
-  - component: {fileID: 3880877118124903863}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -59,7 +58,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c14f82b07d53b26449398cf38dca9e98, type: 2}
+  - {fileID: 2100000, guid: 36f6a9c7c25253c4aad1859ff2491242, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -80,18 +79,18 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!65 &3880877118124903863
+--- !u!65 &7833734307653694301
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1171023589110367291}
+  m_GameObject: {fileID: 1217519994549780504}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 2, y: 0.5, z: 2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &8266363287844748765
 PrefabInstance:
@@ -100,11 +99,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 553697952172673535, guid: a13b34ed0ee560d44bfd31decb6b12ba,
-        type: 3}
-      propertyPath: tileColor.a
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 553697952172673535, guid: a13b34ed0ee560d44bfd31decb6b12ba,
         type: 3}
       propertyPath: tileColor.b
@@ -182,6 +176,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a13b34ed0ee560d44bfd31decb6b12ba, type: 3}
+--- !u!1 &1217519994549780504 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7087955971389242821, guid: a13b34ed0ee560d44bfd31decb6b12ba,
+    type: 3}
+  m_PrefabInstance: {fileID: 8266363287844748765}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5345292177505519287 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4077533884222602090, guid: a13b34ed0ee560d44bfd31decb6b12ba,

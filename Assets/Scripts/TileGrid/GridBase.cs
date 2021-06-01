@@ -51,6 +51,12 @@
 #else
                     TileBase tile = Instantiate(GetTilePrefab(x, y), transform);
 #endif
+                    if (tile == null)
+                    {
+                        Debug.LogError("Base Tile is null, prefab is missing TileBase MonoBehaviour?");
+                        continue;
+                    }
+
                     tile.transform.position = startPosition +                   //from start position
                         (useZ ?
                         new Vector3(x * tileSize.x, 0, y * tileSize.z) :        //if use Z, move on X and Z

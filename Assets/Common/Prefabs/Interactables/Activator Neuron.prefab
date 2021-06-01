@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2575723496577677447}
   - component: {fileID: 5314652730014045723}
+  - component: {fileID: 3902517778477252227}
+  - component: {fileID: 6866648107216468282}
   m_Layer: 9
   m_Name: Activator Neuron
   m_TagString: Untagged
@@ -25,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2575723496577677449}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.48, y: 1.43, z: 4.05}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2575723496916494014}
@@ -49,6 +51,60 @@ MonoBehaviour:
   ropeAttachPoint: {fileID: 0}
   canPickRope: 1
   ObjectsToActivate: []
+--- !u!114 &3902517778477252227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2575723496577677449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71331eaf90456b94b8ead85181d33c52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlesOnPick:
+  - {fileID: 0}
+  soundOnPick:
+  - audioClip: {fileID: 0}
+    volume: 0
+  - audioClip: {fileID: 0}
+    volume: 0
+  particlesOnAttach:
+  - {fileID: 0}
+  soundOnAttach:
+  - audioClip: {fileID: 0}
+    volume: 0
+  - audioClip: {fileID: 0}
+    volume: 0
+  particlesOnDetach:
+  - {fileID: 0}
+  soundOnDetach:
+  - audioClip: {fileID: 0}
+    volume: 0
+  - audioClip: {fileID: 0}
+    volume: 0
+  particlesOnRewind:
+  - {fileID: 0}
+  soundOnRewind:
+  - audioClip: {fileID: 0}
+    volume: 0
+  - audioClip: {fileID: 0}
+    volume: 0
+--- !u!136 &6866648107216468282
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2575723496577677449}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 4.5
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.25, z: 0}
 --- !u!1 &2575723496916493953
 GameObject:
   m_ObjectHideFlags: 0
@@ -58,7 +114,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2575723496916494014}
-  - component: {fileID: 4220461520714459083}
   m_Layer: 9
   m_Name: Graphics
   m_TagString: Untagged
@@ -82,19 +137,6 @@ Transform:
   m_Father: {fileID: 2575723496577677447}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &4220461520714459083
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2575723496916493953}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 2, z: 1}
-  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!1 &3430094962042030555
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,7 +163,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3430094962042030555}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2575723496916494014}
@@ -194,7 +236,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 3cf2ee0ff0099b0409a40331653fb16d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3cf2ee0ff0099b0409a40331653fb16d,
         type: 3}
