@@ -52,7 +52,7 @@
         {
             if (prefab == null)
             {
-                Debug.LogWarning("ParticlesManager.Play(): Particles prefab is not set (Intreractable Feedback Script) ");
+                Debug.LogWarning("ParticlesManager.Play(): Particles prefab is not set (Intreractables Feedback Script) ");
                 return;
             }
                 
