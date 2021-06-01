@@ -1,10 +1,10 @@
-﻿namespace BrainPuzzle
+﻿namespace redd096
 {
     using System.Collections;
     using System.Collections.Generic;
     using UnityEngine;
 
-    [AddComponentMenu("BrainPuzzle/Procedural Map/Controller Procedural Map Managers")]
+    [AddComponentMenu("redd096/Procedural Map/Controller Procedural Map Managers")]
     public abstract class ControllerProceduralMapManagers : MonoBehaviour
     {
         [Header("Managers to activate in order")]

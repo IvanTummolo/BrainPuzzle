@@ -2047,7 +2047,7 @@ PrefabInstance:
         type: 3}
       propertyPath: fillerRooms.Array.data[0].roomPrefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 6595384632044376230, guid: 59c132cb5b4ec38418e13ff0a6c8b6ba,
+      objectReference: {fileID: 6595384632044376230, guid: 8c5d3116d7091ff4490ee589a710192c,
         type: 3}
     - target: {fileID: 5395595350726697734, guid: 33c1ea6606b2d1441a800a3f745943c1,
         type: 3}

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using BrainPuzzle;
+using redd096;
 
 public abstract class Interactable : MonoBehaviour
 {

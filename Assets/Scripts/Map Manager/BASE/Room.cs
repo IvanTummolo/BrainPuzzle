@@ -1,4 +1,4 @@
-﻿namespace BrainPuzzle
+﻿namespace redd096
 {
     using System.Collections;
     using System.Collections.Generic;
@@ -22,7 +22,7 @@
         public TypeOfDoor typeOfDoor;
     }
 
-    [AddComponentMenu("BrainPuzzle/Procedural Map/Room")]
+    [AddComponentMenu("redd096/Procedural Map/Room")]
     [SelectionBase]
     public abstract class Room : MonoBehaviour
     {

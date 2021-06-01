@@ -1,9 +1,9 @@
-﻿namespace BrainPuzzle
+﻿namespace redd096
 {
     using System.Collections.Generic;
     using UnityEngine;
 
-    [AddComponentMenu("BrainPuzzle/Singletons/Particles Manager")]
+    [AddComponentMenu("redd096/Singletons/Particles Manager")]
     public class ParticlesManager : Singleton<ParticlesManager>
     {
         private Transform particlesParent;
@@ -50,12 +50,6 @@
         /// </summary>
         public void Play(ParticleSystem prefab, Vector3 position, Quaternion rotation)
         {
-            if (prefab == null)
-            {
-                Debug.LogWarning("ParticlesManager.Play(): Particles prefab is not set (Intreractables Feedback Script) ");
-                return;
-            }
-                
             //if this pooling is not in the dictionary, add it
             if (poolingParticles.ContainsKey(prefab) == false)
                 poolingParticles.Add(prefab, new Pooling<ParticleSystem>());

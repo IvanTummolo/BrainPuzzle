@@ -1,9 +1,9 @@
-﻿namespace BrainPuzzle
+﻿namespace redd096
 {
     using UnityEngine;
     using UnityEngine.SceneManagement;
 
-    [AddComponentMenu("BrainPuzzle/Singletons/Scene Loader")]
+    [AddComponentMenu("redd096/Singletons/Scene Loader")]
     public class SceneLoader : Singleton<SceneLoader>
     {
         /// <summary>

@@ -1,8 +1,8 @@
-﻿namespace BrainPuzzle
+﻿namespace redd096
 {
     using UnityEngine;
 
-    [AddComponentMenu("BrainPuzzle/TileGrid/Tile Color Map")]
+    [AddComponentMenu("redd096/TileGrid/Tile Color Map")]
     [SelectionBase]
     public class TileColorMap : TileBase
     {

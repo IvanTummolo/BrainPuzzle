@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using BrainPuzzle;
+using redd096;
 
-[AddComponentMenu("BrainPuzzle/Procedural Map/Controller Map Manager")]
+[AddComponentMenu("Project Brain/Procedural Map/Controller Map Manager")]
 public class ControllerProceduralMapManagersGame : ControllerProceduralMapManagers
 {
 }

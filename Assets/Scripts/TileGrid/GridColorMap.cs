@@ -1,4 +1,4 @@
-﻿namespace BrainPuzzle
+﻿namespace redd096
 {
     using UnityEngine;
 
@@ -35,7 +35,7 @@
 
 #endif
 
-    [AddComponentMenu("BrainPuzzle/TileGrid/Grid Color Map")]
+    [AddComponentMenu("redd096/TileGrid/Grid Color Map")]
     public class GridColorMap : GridBase
     {
         [Header("Color Map")]
