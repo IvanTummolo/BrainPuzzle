@@ -133,7 +133,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: c14f82b07d53b26449398cf38dca9e98, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: -4304078755784075705, guid: 0233b60ca54ee654498d41574f662809,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -158,6 +158,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: N_Interruttore_low
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 0233b60ca54ee654498d41574f662809,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1320468087078132855, guid: 0233b60ca54ee654498d41574f662809,
         type: 3}

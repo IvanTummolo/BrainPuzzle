@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &340040062890577227
+--- !u!1001 &1752082866968784486
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 1217519994549780504, guid: 9f01bdc524f143747842a5d7a0673564,
         type: 3}
       propertyPath: m_Name
-      value: Neuron Tile
+      value: Activator Door Tile
       objectReference: {fileID: 0}
     - target: {fileID: 6336097595642347879, guid: 9f01bdc524f143747842a5d7a0673564,
         type: 3}
@@ -75,82 +75,82 @@ PrefabInstance:
     - target: {fileID: 8437252861406868514, guid: 9f01bdc524f143747842a5d7a0673564,
         type: 3}
       propertyPath: tileColor.r
-      value: 0
+      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f01bdc524f143747842a5d7a0673564, type: 3}
---- !u!4 &6005065853178383404 stripped
+--- !u!4 &5746295315061862145 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6336097595642347879, guid: 9f01bdc524f143747842a5d7a0673564,
     type: 3}
-  m_PrefabInstance: {fileID: 340040062890577227}
+  m_PrefabInstance: {fileID: 1752082866968784486}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &5595949296842624968
+--- !u!1001 &7709225174776505140
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 6005065853178383404}
+    m_TransformParent: {fileID: 5746295315061862145}
     m_Modifications:
-    - target: {fileID: 2575723496577677447, guid: 53b292db27147344397278763cb05f5b,
+    - target: {fileID: 106807082210547332, guid: 32c6cf30ab4f3a1479361d34ccd3098c,
         type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2575723496577677447, guid: 53b292db27147344397278763cb05f5b,
+    - target: {fileID: 106807082210547332, guid: 32c6cf30ab4f3a1479361d34ccd3098c,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2575723496577677447, guid: 53b292db27147344397278763cb05f5b,
+    - target: {fileID: 106807082210547332, guid: 32c6cf30ab4f3a1479361d34ccd3098c,
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.25
       objectReference: {fileID: 0}
-    - target: {fileID: 2575723496577677447, guid: 53b292db27147344397278763cb05f5b,
+    - target: {fileID: 106807082210547332, guid: 32c6cf30ab4f3a1479361d34ccd3098c,
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2575723496577677447, guid: 53b292db27147344397278763cb05f5b,
+    - target: {fileID: 106807082210547332, guid: 32c6cf30ab4f3a1479361d34ccd3098c,
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2575723496577677447, guid: 53b292db27147344397278763cb05f5b,
+    - target: {fileID: 106807082210547332, guid: 32c6cf30ab4f3a1479361d34ccd3098c,
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2575723496577677447, guid: 53b292db27147344397278763cb05f5b,
+    - target: {fileID: 106807082210547332, guid: 32c6cf30ab4f3a1479361d34ccd3098c,
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2575723496577677447, guid: 53b292db27147344397278763cb05f5b,
+    - target: {fileID: 106807082210547332, guid: 32c6cf30ab4f3a1479361d34ccd3098c,
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2575723496577677447, guid: 53b292db27147344397278763cb05f5b,
+    - target: {fileID: 106807082210547332, guid: 32c6cf30ab4f3a1479361d34ccd3098c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2575723496577677447, guid: 53b292db27147344397278763cb05f5b,
+    - target: {fileID: 106807082210547332, guid: 32c6cf30ab4f3a1479361d34ccd3098c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2575723496577677447, guid: 53b292db27147344397278763cb05f5b,
+    - target: {fileID: 106807082210547332, guid: 32c6cf30ab4f3a1479361d34ccd3098c,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2575723496577677449, guid: 53b292db27147344397278763cb05f5b,
+    - target: {fileID: 5352315667315958982, guid: 32c6cf30ab4f3a1479361d34ccd3098c,
         type: 3}
       propertyPath: m_Name
-      value: Neuron
+      value: Activator Door
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 53b292db27147344397278763cb05f5b, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 32c6cf30ab4f3a1479361d34ccd3098c, type: 3}

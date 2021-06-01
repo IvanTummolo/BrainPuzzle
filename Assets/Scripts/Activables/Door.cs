@@ -7,6 +7,13 @@ public class Door : Activable
     bool calledFromConnectedDoor;
     bool forceDoor;
 
+    private Animator m_Animator;
+
+    public void Start()
+    {
+        m_Animator = GetComponentInChildren<Animator>();
+    }
+
     public bool isOpen { get; private set; } = false;
     public List<Door> connectedDoors { get; private set; } = new List<Door>();
 
@@ -50,6 +57,7 @@ public class Door : Activable
     {
         //if hit player
         Player player = other.GetComponentInParent<Player>();
+
         if (player)
         {
             //check if enter in room, then call EnterRoom and deactivate previous rooms
@@ -71,6 +79,14 @@ public class Door : Activable
     {
         //set is open or closed
         isOpen = open;
+
+        if (!isOpen)
+            if (open)
+                m_Animator.SetTrigger("Open");
+    
+        if (isOpen)
+            if (!open)
+                m_Animator.SetTrigger("Close");
 
         foreach (Renderer rend in ObjectToControl.GetComponentsInChildren<Renderer>())
         {

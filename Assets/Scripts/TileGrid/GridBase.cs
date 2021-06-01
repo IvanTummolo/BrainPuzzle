@@ -53,7 +53,7 @@
 #endif
                     if (tile == null)
                     {
-                        Debug.LogError("Base Tile is null, prefab is missing TileBase MonoBehaviour?");
+                        Debug.LogError("Base Tile is null, TileBase component is missing or color is not defined for TileBase MonoBehaviour?");
                         continue;
                     }
 
