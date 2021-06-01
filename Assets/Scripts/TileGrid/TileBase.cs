@@ -1,8 +1,8 @@
-﻿namespace BrainPuzzle
-{
-    using UnityEngine;
+﻿using UnityEngine;
 
-    public abstract class TileBase : MonoBehaviour
+namespace BrainPuzzle
+{
+    public abstract class TileBase: MonoBehaviour
     {
         [Header("Debug")]
         [SerializeField] protected Vector2Int positionInGrid;

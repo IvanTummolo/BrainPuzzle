@@ -9,10 +9,13 @@
         [SerializeField] bool useZ = true;
 
         [Header("Grid Base")]
-        [SerializeField] protected Vector3 startPosition = Vector3.zero;
-        [SerializeField] protected Vector3 tileSize = Vector3.one;
+        [SerializeField] 
+        protected Vector3 startPosition = Vector3.zero;
+        [SerializeField] 
+        public Vector3 TileSize = Vector3.one;
 
-        protected Dictionary<Vector2Int, TileBase> grid = new Dictionary<Vector2Int, TileBase>();
+        public Dictionary<Vector2Int, TileBase> Grid = new Dictionary<Vector2Int, TileBase>();
+   
 
         protected virtual void Awake()
         {
@@ -35,11 +38,12 @@
             }
 
             //then clear dictionary
-            grid.Clear();
+            Grid.Clear();
         }
 
         protected virtual void GenerateGrid(int gridSizeX, int gridsizeY)
         {
+
             //for every pixel in image
             for (int x = 0; x < gridSizeX; x++)
             {
@@ -59,14 +63,14 @@
 
                     tile.transform.position = startPosition +                   //from start position
                         (useZ ?
-                        new Vector3(x * tileSize.x, 0, y * tileSize.z) :        //if use Z, move on X and Z
-                        new Vector3(x * tileSize.x, y * tileSize.y, 0));        //if use Y, move on X and Y
+                        new Vector3(x * TileSize.x, 0, y * TileSize.z) :        //if use Z, move on X and Z
+                        new Vector3(x * TileSize.x, y * TileSize.y, 0));        //if use Y, move on X and Y
                     tile.transform.rotation = Quaternion.identity;  //set rotation
 
                     //init tile and add to dictionary
                     Vector2Int positionInGrid = new Vector2Int(x, y);
                     tile.Init(positionInGrid);
-                    grid.Add(positionInGrid, tile);
+                    Grid.Add(positionInGrid, tile);
                 }
             }
         }
@@ -78,13 +82,18 @@
         void GenerateReferences()
         {
             //create dictionary
-            grid.Clear();
+            Grid.Clear();
             foreach (TileBase tile in FindObjectsOfType<TileBase>())
             {
                 //if not already inside grid, add it
-                if (grid.ContainsKey(tile.PositionInGrid) == false)
-                    grid.Add(tile.PositionInGrid, tile);
+                if (Grid.ContainsKey(tile.PositionInGrid) == false)
+                    Grid.Add(tile.PositionInGrid, tile);
             }
+        }
+
+        public TileBase GetTilePrefab(Vector2Int pos)
+        {
+            return GetTilePrefab(pos.x, pos.y);
         }
 
         #endregion
@@ -92,6 +101,6 @@
         /// <summary>
         /// Get Tile Prefab
         /// </summary>
-        protected abstract TileBase GetTilePrefab(int x, int y);
+        public abstract TileBase GetTilePrefab(int x, int y);
     }
 }
