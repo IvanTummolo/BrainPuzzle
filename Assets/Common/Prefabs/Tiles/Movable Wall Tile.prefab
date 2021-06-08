@@ -14,6 +14,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 553697952172673535, guid: a13b34ed0ee560d44bfd31decb6b12ba,
         type: 3}
+      propertyPath: tileColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 553697952172673535, guid: a13b34ed0ee560d44bfd31decb6b12ba,
+        type: 3}
       propertyPath: tileColor.r
       value: 1
       objectReference: {fileID: 0}

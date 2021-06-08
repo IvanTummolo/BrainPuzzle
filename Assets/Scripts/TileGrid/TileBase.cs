@@ -2,7 +2,7 @@
 
 namespace BrainPuzzle
 {
-    public abstract class TileBase: MonoBehaviour
+    public abstract class TileBase: MonoBehaviour // ScriptableObject
     {
         [Header("Debug")]
         [SerializeField] protected Vector2Int positionInGrid;

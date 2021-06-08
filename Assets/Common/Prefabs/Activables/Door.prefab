@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 272518695183497594}
   - component: {fileID: 3610637448581898100}
+  - component: {fileID: 2429594857544286583}
   - component: {fileID: 4077123610720770571}
   m_Layer: 0
   m_Name: Door
@@ -48,6 +49,22 @@ MonoBehaviour:
   objectToControl: {fileID: 0}
   howManyObjectsToActivate: -1
   ObjectsForActivate: []
+--- !u!114 &2429594857544286583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5992765831743363756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c6091bf3c896e944b88e4484309ff42, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particlesOnActive: []
+  soundOnActive: []
+  particlesOnDeactive: []
+  soundOnDeactive: []
 --- !u!65 &4077123610720770571
 BoxCollider:
   m_ObjectHideFlags: 0
