@@ -245,7 +245,7 @@ MonoBehaviour:
   m_ScreenY: 0.5
   m_DeadZoneWidth: 0.05
   m_DeadZoneHeight: 0.15
-  m_SoftZoneWidth: 0.1
+  m_SoftZoneWidth: 0.11
   m_SoftZoneHeight: 0.2
   m_BiasX: 0
   m_BiasY: 0
@@ -263,7 +263,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 5
-  m_FollowOffset: {x: 0, y: 6.7, z: -12.01}
+  m_FollowOffset: {x: 0, y: 12, z: -16}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -468,8 +468,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418519810}
-  m_LocalRotation: {x: 0.2516958, y: 0.000000018156513, z: -0.000000004721935, w: 0.9678064}
-  m_LocalPosition: {x: 0, y: 7.92, z: -10.01}
+  m_LocalRotation: {x: 0.31622782, y: 0.000000019569713, z: -0.0000000065232366, w: 0.9486833}
+  m_LocalPosition: {x: 0, y: 13.22, z: -14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -736,7 +736,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1460270687}
-  m_LocalRotation: {x: 0.2516958, y: 0.000000018156511, z: -0.000000004721934, w: 0.9678064}
+  m_LocalRotation: {x: 0.31622776, y: 0.00000001956971, z: -0.000000006523236, w: 0.9486833}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -810,8 +810,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475920491}
-  m_LocalRotation: {x: 0.25169578, y: 0.00000005583824, z: -0.000000014521755, w: 0.96780646}
-  m_LocalPosition: {x: 0, y: 0.046017647, z: -0.08248997}
+  m_LocalRotation: {x: 0.3162277, y: 0.00000001956971, z: -0.0000000065232353, w: 0.9486833}
+  m_LocalPosition: {x: 0, y: 0.011360168, z: -0.01515007}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 160563282}
@@ -942,7 +942,7 @@ MonoBehaviour:
   m_ScreenY: 0.5
   m_DeadZoneWidth: 0.05
   m_DeadZoneHeight: 0.15
-  m_SoftZoneWidth: 0.1
+  m_SoftZoneWidth: 0.11
   m_SoftZoneHeight: 0.2
   m_BiasX: 0
   m_BiasY: 0
@@ -960,7 +960,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 5
-  m_FollowOffset: {x: 0, y: 6.7, z: -12.01}
+  m_FollowOffset: {x: 0, y: 12, z: -16}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -1066,9 +1066,9 @@ MonoBehaviour:
   m_VerticalDamping: 0
   m_ScreenX: 0.5
   m_ScreenY: 0.5
-  m_DeadZoneWidth: 0.5
+  m_DeadZoneWidth: 0
   m_DeadZoneHeight: 0.15
-  m_SoftZoneWidth: 0.5
+  m_SoftZoneWidth: 0.11
   m_SoftZoneHeight: 0.2
   m_BiasX: 0
   m_BiasY: 0
@@ -1086,7 +1086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BindingMode: 5
-  m_FollowOffset: {x: 0, y: 6.7, z: -12.01}
+  m_FollowOffset: {x: 0, y: 12, z: -16}
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 1
@@ -1205,7 +1205,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909842277}
-  m_LocalRotation: {x: 0.2516958, y: 0.00000000444066, z: -0.0000000011548754, w: 0.9678064}
+  m_LocalRotation: {x: 0.31622776, y: -0.000000011711045, z: 0.000000003903683, w: 0.9486833}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1259,7 +1259,7 @@ MonoBehaviour:
     Dutch: 0
     LensShift: {x: 0, y: 0}
   m_Transitions:
-    m_BlendHint: 1
+    m_BlendHint: 3
     m_InheritPosition: 0
     m_OnCameraLive:
       m_PersistentCalls:
@@ -1320,12 +1320,12 @@ MonoBehaviour:
   m_BindingMode: 5
   m_SplineCurvature: 0.2
   m_Orbits:
-  - m_Height: 6.7
-    m_Radius: 12.01
-  - m_Height: 6.7
-    m_Radius: 12.01
-  - m_Height: 6.7
-    m_Radius: 12.01
+  - m_Height: 12
+    m_Radius: 16
+  - m_Height: 12
+    m_Radius: 16
+  - m_Height: 12
+    m_Radius: 16
   m_LegacyHeadingBias: 3.4028235e+38
   m_Rigs:
   - {fileID: 1475920492}
@@ -1339,7 +1339,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1939527612}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.92, z: -10.01}
+  m_LocalPosition: {x: 0, y: 13.22, z: -14}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1475920493}
