@@ -43,13 +43,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c6091bf3c896e944b88e4484309ff42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particlesOnActive: {fileID: 0}
+  particlesOnActive:
+  - {fileID: 0}
   soundOnActive:
-    audioClip: {fileID: 0}
+  - audioClip: {fileID: 0}
     volume: 0
-  particlesOnDeactive: {fileID: 0}
+  - audioClip: {fileID: 0}
+    volume: 0
+  particlesOnDeactive:
+  - {fileID: 0}
   soundOnDeactive:
-    audioClip: {fileID: 0}
+  - audioClip: {fileID: 0}
+    volume: 0
+  - audioClip: {fileID: 0}
     volume: 0
 --- !u!1001 &7517717757463186438
 PrefabInstance:
@@ -218,6 +224,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 7292626887642187793, guid: 7f4e4e79f45bed64383b2851c82572bd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3610637448581898100, guid: 7f4e4e79f45bed64383b2851c82572bd, type: 3}
