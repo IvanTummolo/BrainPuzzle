@@ -76,3 +76,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   positionInGrid: {x: 0, y: 0}
   tileColor: {r: 0.514151, g: 0.94014597, b: 1, a: 1}
+  Type: 10

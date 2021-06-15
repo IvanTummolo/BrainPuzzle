@@ -102,5 +102,7 @@
         /// Get Tile Prefab
         /// </summary>
         public abstract TileBase GetTilePrefab(int x, int y);
+
+        public abstract TileBase GetTilePrefab(Color color);
     }
 }

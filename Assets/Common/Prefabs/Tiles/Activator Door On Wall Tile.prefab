@@ -228,6 +228,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3635601947351579721, guid: 52f6b965045283148b4138d2ccfceb8e,
         type: 3}
+      propertyPath: Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635601947351579721, guid: 52f6b965045283148b4138d2ccfceb8e,
+        type: 3}
+      propertyPath: Typology
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635601947351579721, guid: 52f6b965045283148b4138d2ccfceb8e,
+        type: 3}
+      propertyPath: tileName
+      value: ActivatorDoor
+      objectReference: {fileID: 0}
+    - target: {fileID: 3635601947351579721, guid: 52f6b965045283148b4138d2ccfceb8e,
+        type: 3}
       propertyPath: tileColor.b
       value: 0.023529412
       objectReference: {fileID: 0}
