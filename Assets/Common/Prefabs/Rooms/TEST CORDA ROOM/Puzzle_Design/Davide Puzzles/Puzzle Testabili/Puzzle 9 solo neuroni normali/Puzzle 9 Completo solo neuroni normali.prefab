@@ -93,13 +93,7 @@ MonoBehaviour:
   cameraPosition: {fileID: 6595384633633450926}
   timeToMoveCamera: 1
   precisionPosition: 0.1
-  roomAlternatives:
-  - {fileID: 6595384632044376230, guid: 15f5ddc634d5530418e4df1302db5b17, type: 3}
-  - {fileID: 6595384632044376230, guid: f6fcf0801d755ed46ac4ac597fe4b2ad, type: 3}
-  - {fileID: 6595384632044376230, guid: b8aad20712a4ad94a8686962677bf71b, type: 3}
-  - {fileID: 6595384632044376230, guid: 3adf4f855be9a4542bedd806eb095a74, type: 3}
-  - {fileID: 6595384632044376230, guid: 390e46de25612c94188a8760bd8ee038, type: 3}
-  - {fileID: 6595384632044376230, guid: 65a114c5a03f41d429d8855fc5a6accc, type: 3}
+  roomAlternatives: []
 --- !u!1 &6595384632266126537
 GameObject:
   m_ObjectHideFlags: 0

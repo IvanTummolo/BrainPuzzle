@@ -96,21 +96,7 @@ MonoBehaviour:
   cameraPosition: {fileID: 6595384633633450926}
   timeToMoveCamera: 1
   precisionPosition: 0.1
-  roomAlternatives:
-  - {fileID: 6595384632044376230, guid: f1487057a74359a4da860afc137f9426, type: 3}
-  - {fileID: 6595384632044376230, guid: 4f889b73fbe0b484a95039c2084797fc, type: 3}
-  - {fileID: 6595384632044376230, guid: 996ffebdcde1c414c9eac8224364713b, type: 3}
-  - {fileID: 6595384632044376230, guid: f2644ceced98c4f4298e2317392e087b, type: 3}
-  - {fileID: 6595384632044376230, guid: 6a65db0a0ad4ae845b4fc82581606ec2, type: 3}
-  - {fileID: 6595384632044376230, guid: b3c49ebcf50fb014e968f05212b633ce, type: 3}
-  - {fileID: 6595384632044376230, guid: 53fd259142719514b986ab6ef7ce7c41, type: 3}
-  - {fileID: 6595384632044376230, guid: 5d3c0664045ca4a4195a0e3c3e87de85, type: 3}
-  - {fileID: 6595384632044376230, guid: a55fa6c4c54beef4a8759d8fbad36d44, type: 3}
-  - {fileID: 6595384632044376230, guid: 8b016a3b4b1428b458d0aad7af5bd164, type: 3}
-  - {fileID: 6595384632044376230, guid: f552b0fa1d760214f8842197fafc2cfe, type: 3}
-  - {fileID: 6595384632044376230, guid: 3c6202b85abf87746ad5cfa5664912bf, type: 3}
-  - {fileID: 6595384632044376230, guid: d04c4f0db3eaa384188db2c6dd97cf05, type: 3}
-  - {fileID: 6595384632044376230, guid: fddafadaae9dc0d4ebd316fe5c9c1ed5, type: 3}
+  roomAlternatives: []
 --- !u!1 &6595384632266126537
 GameObject:
   m_ObjectHideFlags: 0

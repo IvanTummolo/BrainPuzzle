@@ -608,9 +608,7 @@ MonoBehaviour:
   cameraPosition: {fileID: 8194657237509772889}
   timeToMoveCamera: 1
   precisionPosition: 0.1
-  roomAlternatives:
-  - {fileID: 535466702588894840, guid: 461fd1dc0dbb7a545adcfdb2594cdcb0, type: 3}
-  - {fileID: 535466702588894840, guid: 81de40ce3972e1b44822b4b2a4514e28, type: 3}
+  roomAlternatives: []
 --- !u!1 &8559709598549112892
 GameObject:
   m_ObjectHideFlags: 0
